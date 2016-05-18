@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var listenPort = 3000;
+// add middleware here
 
 var middleware = {
 	requireAuthentication: function(req, res, next) {
