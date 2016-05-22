@@ -1,9 +1,7 @@
 var express = require('express');
 var app = express();
 var middleware = require('./middleware.js');
-var listenPort = 3000;
-// add middleware here
-
+var listenPort = process.env.PORT || 3000;
 
 
 app.use(middleware.logger);
